@@ -14,7 +14,7 @@ ENV PATH="/usr/local/cuda/bin:${PATH}"
 ARG APTPKGS="wget software-properties-common"
 RUN apt-get update -y && \
     apt-get install -y python3 python3-pip python3-venv && \
-    apt-get install -y --no-install-recommends openssh-server openssh-client git git-lfs && \
+    apt-get install -y --no-install-recommends git git-lfs && \
     python3 -m pip install --upgrade pip && \
     apt-get install -y --no-install-recommends $APTPKGS && \
     apt-get clean && \
