@@ -38,7 +38,7 @@ ARG PYTORCH="2.0.1"
 ARG CUDA="118"
 RUN pip3 install --no-cache-dir -U torch==$PYTORCH torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu$CUDA
 
-RUN pip3 install vllm huggingface-hub==0.16.4
+RUN pip3 install vllm huggingface-hub
 
 # Set up git to support LFS, and to store credentials; useful for Huggingface Hub
 RUN git config --global credential.helper store && \
