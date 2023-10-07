@@ -37,6 +37,7 @@ engine_args = AsyncEngineArgs(
     seed=0,
     max_num_batched_tokens=8192,
     disable_log_stats=False,
+    quantization="awq",
     # max_num_seqs=256,
 )
 
